@@ -5,14 +5,11 @@ const bodyEl = document.querySelector('body');
 startBtn.addEventListener('click', getColorBody);
 stoptBtn.addEventListener('click', stopColorBody);
 
-// let currentColorBody = '#ffffff';
 let timerId = null;
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
-
-// currentColorBody = getRandomHexColor();
 
 function getColorBody() {
   startBtn.disabled = true;
